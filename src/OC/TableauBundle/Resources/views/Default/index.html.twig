@@ -1,0 +1,7 @@
+{% extends "::base.html.twig" %}
+{% block body %}
+    {% for article in tableau %}
+        {{ article.titre }}
+        {{ article.content }}
+    {% endfor %}
+{% endblock %}

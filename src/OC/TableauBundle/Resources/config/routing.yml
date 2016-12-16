@@ -1,0 +1,7 @@
+oc_tableau_homepage:
+    path:     /
+    defaults: { _controller: OCTableauBundle:Default:index }
+
+oc_tableau_antispam:
+    path:     /antispam
+    defaults: { _controller: OCTableauBundle:Default:antispam }

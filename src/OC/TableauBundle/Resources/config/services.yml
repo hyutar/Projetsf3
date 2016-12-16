@@ -1,0 +1,13 @@
+services:
+#    oc_tableau.example:
+#        class: OC\TableauBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+
+# src/OC/PlatformBundle/Resources/config/services.yml
+
+services:
+    oc_platform.antispam:
+        class: OC\TableauBundle\Services\OCAntispam
+        arguments: '%antispam_maxlength%'
+        tags:
+          -  { anti: twig.extension }
